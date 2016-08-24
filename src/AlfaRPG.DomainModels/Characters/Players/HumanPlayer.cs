@@ -10,6 +10,11 @@ namespace AlfaRPG.DomainModels.Characters.Players
 {
     public class HumanPlayer : Human, IPlayerCharacter
     {
+        public HumanPlayer()
+        {
+            JiraQuests = new List<IJiraQuest>();
+        }
+
         public IList<IJiraQuest> JiraQuests { get; set; }
     }
 }

@@ -26,5 +26,16 @@ namespace AlfaRPGTests.JiraQuests
             quest.SprintPoints = 8;
             Assert.IsTrue(quest.SprintPoints == 8);
         }
+
+        [Test]
+        public void JiraQuest_Has_EstimatedCompletionTime()
+        {
+            IJiraQuest quest = new JiraQuest();
+            quest.EstimatedCompletionTime = 7.5;
+            Assert.IsTrue(quest.EstimatedCompletionTime == 7.5);
+        }
+
+
+
     }
 }
