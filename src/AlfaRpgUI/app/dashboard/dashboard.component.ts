@@ -5,8 +5,10 @@ import { Hero } from '../models/hero';
 import { HeroService } from '../services/hero.service';
 
 @Component({
+  moduleId: module.id,
   selector: 'my-dashboard',
-  templateUrl: 'app/dashboard/dashboard.component.html'
+  templateUrl: './dashboard.component.html',
+  styleUrls: [ 'dashboard.component.css' ],
 })
 export class DashboardComponent implements OnInit {
 
@@ -14,7 +16,7 @@ export class DashboardComponent implements OnInit {
 
   constructor(
     private heroService: HeroService,
-    @Inject(Router) private router: Router){}
+    private router: Router){}
 
   ngOnInit(): void {
     this.heroService.getHeroesSlowly()

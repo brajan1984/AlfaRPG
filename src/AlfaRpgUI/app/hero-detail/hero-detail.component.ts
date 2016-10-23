@@ -6,10 +6,10 @@ import { Location } from '@angular/common';
 import { HeroService } from '../services/hero.service';
 
 @Component({
-    moduleId: module.Id,
+    moduleId: module.id,
     selector: 'my-hero-detail',
-    templateUrl: 'app/hero-detail/hero-detail.component.html',
-    styleUrls: []
+    templateUrl: './hero-detail.component.html',
+    styles: ['hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
     @Input()
