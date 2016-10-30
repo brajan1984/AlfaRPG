@@ -21,3 +21,39 @@ body, input[text], button {
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.hero-tile-progress-ratio {
+  margin: 5px;
+}
+
+.hero-tile-progress-ratio .ui-progressbar {
+  height: 6px;
+  overflow: visible;
+  border: 1px transparent;
+}
+
+.hero-tile-progress-ratio .ui-progressbar .ui-progressbar-value {
+  height: 10px;
+  margin: -3px 0 -3px 0;
+}
+
+.hero-tile-progress-ratio .ui-progressbar .ui-progressbar-label {
+  display: none;
+  visibility: hidden;
+}
+
+.exp-ratio .ui-progressbar .ui-progressbar-value {
+  background: cornflowerblue;
+}
+
+.exp-ratio .ui-progressbar {
+  background: orange;
+}
+
+.health-ratio .ui-progressbar .ui-progressbar-value {
+  background: green;
+}
+
+.health-ratio .ui-progressbar {
+  background: red;
+}

@@ -6,6 +6,7 @@ export class InMemoryDataService implements InMemoryDbService {
         let testHero = new Hero();
         testHero.id = 12;
         testHero.name = "Narco";
+        testHero.avatar = "hero1.jpg";
         testHero.level = 12;
         testHero.experience = 70;
         testHero.nextLevel = 100;

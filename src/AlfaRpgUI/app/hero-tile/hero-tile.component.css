@@ -1,0 +1,22 @@
+.tile {
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+.avatar-img {
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
+
+.avatar {
+    float: left;
+    width: 25%;
+    overflow: hidden;
+    background-color: red;
+}
+
+.hero-stats {
+    float: left;
+    width: 75%;
+}
