@@ -1,0 +1,7 @@
+<h3>Top Heroes</h3>
+<div class="ui-g">
+  <div class="ui-g-12 ui-sm-12 ui-md-6 ui-lg-3" *ngFor="let hero of heroes" (click)="gotoDetail(hero)">
+    <hero-tile [hero]="hero"></hero-tile>
+  </div>
+</div>
+<hero-search></hero-search>

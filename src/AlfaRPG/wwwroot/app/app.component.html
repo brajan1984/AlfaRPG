@@ -1,12 +1,8 @@
-<header>
-    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-        <div class="mdl-tabs__tab-bar">
-            <a [routerLink]="['/']" class="mdl-layout__tab mdl-js-ripple-effect mdl-button--colored">Home<span class="mdl-ripple"></span></a>
-            <a [routerLink]="['/about']" class="mdl-layout__tab mdl-js-ripple-effect">About<span class="mdl-ripple"></span></a>
-            <a [routerLink]="['/hero']" class="mdl-layout__tab mdl-js-ripple-effect">Hero<span class="mdl-ripple"></span></a>
-        </div>
-    </div>
-</header>
-<main>
-    <router-outlet></router-outlet>
-</main>
+<h1>{{title}}</h1>
+<nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/heroes">Heroes</a>
+</nav>
+<input type="text" pInputText/>
+<router-outlet></router-outlet>
+<!--<my-hero-detail [hero]="selectedHero"></my-hero-detail>-->
