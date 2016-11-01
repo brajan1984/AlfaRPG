@@ -1,11 +1,13 @@
 <div class="tile" *ngIf="hero">
     <div class="avatar"><img class="avatar-img" [src]="getAvatar(hero)"/></div>
-    <div class="hero-stats">
-        <div><label>Name: </label>{{hero.name}}</div>
-        <div><label>LvL: </label>{{hero.level}}</div>
-        <div><label>Exp: </label>{{hero.experience}}/{{hero.nextLevel}}</div>
+    <div class="hero-stats hero-stats-basic">
+        <div class="hero-text-info"><label>Name: </label>{{hero.name}}</div>
+        <div class="hero-text-info"><label>LvL: </label>{{hero.level}}</div>
+    </div>
+    <div class="hero-stats hero-stats-advanced">
+        <div class="hero-text-info"><label>Exp: </label>{{hero.experience}}/{{hero.nextLevel}}
         <div class="hero-tile-progress-ratio"><p-progressBar class="hero-tile-progress-ratio exp-ratio" [value]="getExperienceRatio(hero)"></p-progressBar></div>
-        <div><label>HP: </label>{{hero.currentHitPoints}}/{{hero.maxHitPoints}}</div>
+        <div class="hero-text-info"><label>HP: </label>{{hero.currentHitPoints}}/{{hero.maxHitPoints}}</div>
         <div class="hero-tile-progress-ratio"><p-progressBar class="health-ratio" [value]="getHealthRatio(hero)"></p-progressBar></div>
     </div>
 </div>

@@ -1,5 +1,14 @@
 .tile {
-    background-color: lightblue;
+    background-color: floralwhite;
+    border: 2px solid #fff2d7;
+    overflow: hidden;
+}
+
+.avatar {
+    border: 2px solid #fff2d7;
+    float: left;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
 }
 
@@ -7,16 +16,28 @@
     left: 0px;
     top: 0px;
     width: 100%;
-}
-
-.avatar {
-    float: left;
-    width: 25%;
-    overflow: hidden;
-    background-color: red;
+    height: 100%;
 }
 
 .hero-stats {
+    margin: 6px;
+    color: black;
+    padding: 3px;
+}
+
+.hero-stats-basic {
     float: left;
-    width: 75%;
+    width: 175px;
+}
+
+.hero-stats-advanced {
+    position:  relative;
+    clear: both;
+}
+
+label {
+    display: inline-block;
+    width: 60px;
+    color: black;
+    font-weight: 600;
 }
