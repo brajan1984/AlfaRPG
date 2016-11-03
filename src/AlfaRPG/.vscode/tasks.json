@@ -1,14 +1,41 @@
 {
     "version": "0.1.0",
-    "command": "dotnet",
+    "command": "gulp",
     "isShellCommand": true,
-    "args": [],
+    "args": [
+        "--no-color"
+    ],
     "tasks": [
-        {
-            "taskName": "build",
-            "args": [],
-            "isBuildCommand": true,
-            "problemMatcher": "$msCompile"
-        }
-    ]
+		{
+			"taskName": "scriptsNStyles",
+			"isBuildCommand": true,
+			"showOutput": "always"
+		},
+		{
+			"taskName": "clean",
+			"isBuildCommand": true,
+			"showOutput": "always"
+		},
+		{
+			"taskName": "ts",
+			"isBuildCommand": true,
+			"showOutput": "always",
+			"problemMatcher": "$tsc"
+		},
+		{
+			"taskName": "watch",
+			"isBuildCommand": true,
+			"showOutput": "always"
+		},
+		{
+			"taskName": "watch.ts",
+			"isBuildCommand": true,
+			"showOutput": "always"
+		},
+		{
+			"taskName": "default",
+			"isBuildCommand": true,
+			"showOutput": "always"
+		}
+	]
 }
